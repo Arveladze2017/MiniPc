@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .pcContainer {
@@ -279,6 +280,23 @@ span{
     font-size: 12px;
 }
 
+
+.shutDown {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: space-evenly;
+    bottom: 31px;
+    left: 1px;
+    height: 20px;
+    width: 30%;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    border-radius: 5px;
+    /* border: 1px blue solid; */
+}
 .bottom {
     position: absolute;
     bottom: 0px;
@@ -329,12 +347,39 @@ span{
 .contentHere {
     height: 100vh;
     width: 50vw;
-    background-color: gray;
+    background-color: rgb(50, 50, 50);
+    padding-top: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.contentHere>div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    height: 100vh;
+    width: 50vw;
+    gap: 5px;
 }
 
+.getMiniPC {
+    border: 2px white solid;
+    border-radius: 15px;
+    padding: 0px;
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blue;
+    color: white;
+}
+.getMiniPC:hover{
+    background-color: white;
+    color: blue;
+    border: 2px blue solid;
+}
 
 
 
@@ -407,4 +452,413 @@ span{
 
 .black {
     color: gold !important;
+}
+
+
+.folderOn {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    left: 15%;
+    top: 15%;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 15px;
+    border: 1px solid blue;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.close {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+    border-radius: 7px;
+}
+
+.folderOn > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left: 30%;
+    gap: 15px;
+}
+.folderOn > .div1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left: 10%;
+    gap: 15px;
+}
+.folderOn span {
+    color: black;
+}
+
+.rgbGame,
+.ticTac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.rgbGame>div {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(./assets/RGB.gif);
+}
+.ticTac >div {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(./assets/ticTac.png);
+}
+
+.solarMaket,
+.solarInfo,
+.fbiWanted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 3px;
+}
+.solarMaket >div {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(./assets/solarMaket.png);
+}
+.solarInfo >div {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(./assets/solarInfo.png);
+}
+.fbiWanted >div{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(./assets/fbiWanted.png);
+}
+
+
+/* for Da RGBGame -------------------------------------------------------------- */
+
+
+
+.rgbGameContainer {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(35, 34, 34);
+}
+
+
+header {
+    background-color: #337bb6;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header>p {
+    font-size: 32px;
+    color: white;
+    margin: 0px;
+}
+#h1 {
+    font-size: 48px;
+    color: white;
+    margin: 10px;
+}
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+header>div>button {
+    border: 0px;
+    background-color: white;
+    font-weight: 600;
+    padding: 7.4px 20px;
+}
+header>div>button:hover {
+    background-color: #337bb6;
+    color: white;
+}
+header>div>span {
+    width: 65px;
+    margin: 1px 100px;
+}
+
+
+
+
+
+
+
+
+
+.container {
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.container>div {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    /* gap: 50px; */
+}
+
+
+
+
+.none1{
+    visibility: hidden;
+}
+
+
+
+
+
+
+.mode {
+    position: absolute;
+    color: red;
+    top: 260px;
+    left: 20px;
+    font-size: 32px;
+}
+
+
+/* for Da solarMaket */
+
+.solContainer {
+    font-size: 5px;
+    width: 100em;
+    height: 100em;
+    position: relative;
+    /* top: 5%;
+    left: 5%; */
+    /* position: absolute; */
+}
+.sun {
+    position: absolute;
+    top: 45em;
+    left: 45em;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(255, 255, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.moon, .mercury, .venus, .mars, .jupiter, .saturn, .neptune, .uranus {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.mercury {
+    top: 42.5em;
+    left: 42.5em;
+    width: 15em;
+    height: 15em;
+    animation: orbit 1.5s linear infinite;
+}
+.venus {
+    top: 37.5em;
+    left: 37.5em;
+    width: 25em;
+    height: 25em;
+    animation: orbit 3.75s linear infinite;
+}
+.earth {
+    top: 32.5em;
+    left: 32.5em;
+    width: 35em;
+    height: 35em; 
+    animation: orbit 5s linear infinite;   
+}
+.mars {
+    top: 27.5em;
+    left: 27.5em;
+    width: 45em;
+    height: 45em;
+    animation: orbit 9s linear infinite;
+}
+.jupiter {
+    top: 22.5em;
+    left: 22.5em;
+    width: 55em;
+    height: 55em;
+    animation: orbit 30s linear infinite;
+}
+.saturn {
+    top: 15em;
+    left: 15em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 60s linear infinite;
+}
+.uranus {
+    top: 10em;
+    left: 10em;
+    width: 80em;
+    height: 80em;
+    animation: orbit 100s linear infinite;
+}
+.neptune {
+    top: 5em;
+    left: 5em;
+    width: 90em;
+    height: 90em;
+    animation: orbit 130s linear infinite;
+}
+.moon {
+    top: 1em;
+    right: 1em;
+    width: 8em;
+    height: 8em; 
+    animation: orbit 2.7s linear infinite;
+}
+.earth::before,
+.moon::before,
+.mercury::before,
+.venus::before,
+.mars::before,
+.jupiter::before,
+.saturn::before,
+.uranus::before,
+.neptune::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 1em white;
+}
+.mercury::before {
+    top: 1.5em;
+    right: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: grey;
+}
+.venus::before {
+    top: 2em;
+    right: 2em;
+    width: 3em;
+    height: 3em;
+    background-color: goldenrod;
+}
+.earth::before {
+    top: 3.5em;
+    right: 3.5em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;    
+}
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+.mars::before {
+    top: 5.25em;
+    right: 5.25em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: chocolate;
+}
+.jupiter::before {
+    top: 4em;
+    right: 4em;
+    width: 7em;
+    height: 7em;
+    background-color: #BD998A;
+}
+.saturn::before {
+    top: 7em;
+    right: 7em;
+    width: 6em;
+    height: 6em;
+    background-color: orange;
+}
+.uranus::before {
+    top: 9.5em;
+    right: 9.5em;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: lightblue;
+}
+.neptune::before {
+    top: 11em;
+    right: 11em;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: blue;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* for da FBICARDS ---------------------------------------------*/
+
+.fbiCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 10px;
+}
+
+.fbiCards >div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 15px;
+    padding: 7px;
+}
+.fbiCards div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.fbiCards div p,
+.fbiCards div h3 {
+    width: 180px;
+    text-align: center;
+    margin: 0px;
 }

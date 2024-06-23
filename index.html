@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>mini PC</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
     
@@ -35,6 +36,37 @@
                                     <span>calculator</span>
                                 </div>
                             </div>
+                            <div class="folderOn none">
+                                <button class="close">X</button>
+                                <div>
+                                    <div class="rgbGame">
+                                        <div></div>
+                                        <span>RGB game</span>
+                                    </div>
+                                    <div class="ticTac">
+                                        <div></div>
+                                        <span>TiCTaCToe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="folderOn none">
+                                <button class="close">X</button>
+                                <div class="div1">
+                                    <div class="solarMaket">
+                                        <div></div>
+                                        <span>Solar System</span>
+                                    </div>
+                                    <div class="solarInfo" onclick="window.location.href='./assets/planets.html';">
+                                        <div></div>
+                                        <span>Solar (info)</span>
+                                    </div>
+                                    <div class="fbiWanted">
+                                        <div></div>
+                                        <span>FBI WANTED</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shutDown none"><i class="fa-solid fa-power-off"></i> SHUT DOWN!</div>
                             <div class='bottom'>
                                 <div></div>
                             </div>
@@ -64,31 +96,83 @@
 
 
         <div class="contentHere none">
-            <div class="calContainer">
-                <div class="smallDisplay"></div>
-                <div class="calDisplay"></div>
-                <div class="calAction">
-                    <button id="clear">C</button>
-                    <button id="delete">del</button>
-                    <button id="dot" class="displayAdd">.</button>
-                    <button style ='color: red' class="displayAdd"> / </button>
-                    <button class="displayAdd">1</button>
-                    <button class="displayAdd">2</button>
-                    <button class="displayAdd">3</button>
-                    <button style ='color: red' class="displayAdd"> * </button>
-                    <button class="displayAdd">4</button>
-                    <button class="displayAdd">5</button>
-                    <button class="displayAdd">6</button>
-                    <button style ='color: red' class="displayAdd"> - </button>
-                    <button class="displayAdd">7</button>
-                    <button class="displayAdd">8</button>
-                    <button class="displayAdd">9</button>
-                    <button style ='color: red' class="displayAdd"> + </button>
-                    <button class="displayAdd">0</button>
-                    <button class="displayAdd">00</button>
-                    <button style ='color: red' id="equals">=</button>
+            <div class="none">
+                <button class="getMiniPC"> <i class="fa-solid fa-arrow-left"></i> Get back to miniPC</button>
+                <div class="calContainer">
+                    <div class="smallDisplay"></div>
+                    <div class="calDisplay"></div>
+                    <div class="calAction">
+                        <button id="clear">C</button>
+                        <button id="delete">del</button>
+                        <button id="dot" class="displayAdd">.</button>
+                        <button style ='color: red' class="displayAdd"> / </button>
+                        <button class="displayAdd">1</button>
+                        <button class="displayAdd">2</button>
+                        <button class="displayAdd">3</button>
+                        <button style ='color: red' class="displayAdd"> * </button>
+                        <button class="displayAdd">4</button>
+                        <button class="displayAdd">5</button>
+                        <button class="displayAdd">6</button>
+                        <button style ='color: red' class="displayAdd"> - </button>
+                        <button class="displayAdd">7</button>
+                        <button class="displayAdd">8</button>
+                        <button class="displayAdd">9</button>
+                        <button style ='color: red' class="displayAdd"> + </button>
+                        <button class="displayAdd">0</button>
+                        <button class="displayAdd">00</button>
+                        <button style ='color: red' id="equals">=</button>
+                    </div>
                 </div>
             </div>
+            <div class="none">
+                <button class="getMiniPC"> <i class="fa-solid fa-arrow-left"></i> Get back to miniPC</button>          
+                <div class="rgbGameContainer">
+                    <header>
+                        <p>THE GREAT</p>
+                        <h1 id="h1"></h1>
+                        <p>COLOR GAME</p>
+                        <div>
+                            <button class="newColors">NEW COLORS</button>
+                            <span></span>
+                            <button id="easy">EASY</button>
+                            <button id="hard">HARD</button>
+                        </div>
+                    </header>
+            
+                    <div class="container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+            
+            
+                    <div class="mode"></div>
+                </div>
+            </div>
+            <div  class="none">
+                <button class="getMiniPC"> <i class="fa-solid fa-arrow-left"></i> Get back to miniPC</button>          
+                <div class="solContainer">
+                    <div class="sun"></div>
+                    <div class="mercury"></div>
+                    <div class="venus"></div>
+                    <div class="earth">
+                        <div class="moon"></div>
+                    </div>
+                    <div class="mars"></div>
+                    <div class="jupiter"></div>
+                    <div class="saturn"></div>
+                    <div class="uranus"></div>
+                    <div class="neptune"></div>
+                </div>
+            </div>
+            <div  class="none">
+                <button class="getMiniPC"> <i class="fa-solid fa-arrow-left"></i> Get back to miniPC</button>
+                <div class="fbiCards"></div>
+            </div>
+
         </div>
 
         <script src="main.js"></script>
